@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 60px;
+  margin: 0 auto;
+  @media (max-width: 1564px) {
+    max-width: 1368px;
+  }
+  @media (max-width: 1368px) {
+    max-width: 1280px;
+  }
+  @media (max-width: 1280px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 922px;
+    padding: 0 40px;
+  }
+  @media (max-width: 922px) {
+    max-width: 768px;
+  }
+  @media (max-width: 768px) {
+    max-width: 640px;
+  }
+  @media (max-width: 640px) {
+    max-width: 475px;
+  }
+  @media (max-width: 475px) {
+    max-width: 350px;
+  }
+}
+body {
+  background-color: #04152d;
+  color: #fff;
+}
+h1 {
+  font-size: clamp(3rem, 2.273rem + 3.64vw, 5rem);
+  font-weight: 700;
+}
+h2 {
+  font-size: clamp(1.438rem, 1.188rem + 1.25vw, 2.125rem);
+  font-weight: 700;
+}
+h3 {
+  font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+  font-weight: 700;
+}
+h4 {
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+  font-weight: 400;
+}
+button {
+  font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+  padding: 6px 14px;
+  border-radius: 10px;
+}
+

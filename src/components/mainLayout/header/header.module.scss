@@ -1,0 +1,41 @@
+.container {
+  padding-block: 20px;
+  background: #173d77;
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerIcons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-family: Permanent Marker, cursive;
+      font-size: 26px;
+      font-weight: 900;
+      background: -webkit-linear-gradient(-70deg, #b618ba, #d72b6e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      span {
+        color: #b618ba, #d72b6e;
+      }
+    }
+    .headerTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      a {
+        color: #fff;
+        &:hover {
+          color: #d72b6e;
+        }
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}

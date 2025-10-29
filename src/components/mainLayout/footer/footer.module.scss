@@ -1,0 +1,42 @@
+.container {
+  padding-block: 30px;
+  background: #000;
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    nav {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      font-size: 25px;
+      a {
+        &:hover {
+          color: #d72b6e;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #04152d;
+        cursor: pointer;
+        transition: all ease 0.3s;
+        &:hover {
+          color: #d72b6e;
+          border-radius: 1px solid #d72b6e;
+        }
+      }
+    }
+    p {
+      color: grey;
+    }
+  }
+}
