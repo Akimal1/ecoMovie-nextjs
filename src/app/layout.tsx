@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+
+import 'swiper/css';
 import Footer from "@/components/mainLayout/footer/Footer";
 import Header from "@/components/mainLayout/header/Header";
+import QueryProvider from "@/provider/Provider";
+import VideoCard from "@/ui/videoCard/VideoCard";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Header />
-        {children}
-        <Footer />
+        <QueryProvider>
+          <Header />
+          {children}
+          <Footer />
+        </QueryProvider>
       </body>
     </html>
   );

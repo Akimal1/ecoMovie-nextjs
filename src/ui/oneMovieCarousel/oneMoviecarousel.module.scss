@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 25px;
+  padding-block: 40px;
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  padding-block: 30px;
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .options {
+        display: flex;
+        gap: 17px;
+        select {
+          padding: 10px;
+          background: blue;
+          border-radius: 12px;
+          color: white;
+          font-size: 15px;
+          width: 210px;
+          option {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

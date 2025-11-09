@@ -1,0 +1,86 @@
+.container {
+  padding-block: 10px;
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    .top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 22px;
+        color: white;
+      }
+
+      // Контейнер кнопок Day/Week
+      .toggleButtons {
+        display: flex;
+        gap: 10px;
+
+        button {
+          background: transparent;
+          border: 1px solid red;
+          color: white;
+          font-weight: 500;
+          padding: 8px 18px;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: red;
+            color: white;
+          }
+
+          &.active {
+            background: red;
+            color: white;
+            border-color: red;
+          }
+        }
+      }
+    }
+
+    .list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+
+      .btn_next,
+      .btn_prev {
+        position: absolute;
+        top: 150px;
+        z-index: 100;
+        background: none;
+        font-size: 35px;
+        border: none;
+        color: #ccc;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: red;
+          transform: scale(1.1);
+        }
+      }
+
+      .btn_next {
+        right: 0;
+      }
+
+      .btn_prev {
+        left: 0;
+      }
+    }
+  }
+}

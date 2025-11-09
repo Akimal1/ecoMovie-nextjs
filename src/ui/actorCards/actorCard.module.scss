@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  min-height: 320px;
+  img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-position: top;
+    object-fit: cover;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+      color: #ffffff91;
+    }
+  }
+}

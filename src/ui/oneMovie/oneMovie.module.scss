@@ -1,0 +1,153 @@
+.container {
+    padding-block: 130px;
+    .overlay {
+      background-image: url("https://image.tmdb.org/t/p/original/yvirUYrva23IudARHn3mMGVxWqM.jpg");
+      background-size: 100% 120vh;
+      background-position: top;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 120%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+      background-color: #04152dbc;
+      box-shadow: rgba(4, 21, 45, 1) -50px 0px 700px 200px inset;
+    }
+    .mainContainer {
+      z-index: 1000;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 30px;
+      img {
+        max-width: 350px;
+        width: 100%;
+        height: 525px;
+        border-radius: 15px;
+      }
+      .titleCard {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 525px;
+        h2 {
+          font-weight: 400;
+        }
+        h4 {
+          font-weight: 400;
+          color: #ffffff84;
+        }
+        .genre {
+          display: flex;
+          gap: 5px;
+          span {
+            padding: 5px;
+            background: red;
+            font-size: 11px;
+            border-radius: 5px;
+          }
+        }
+        .play {
+          display: flex;
+          gap: 25px;
+          .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            h4{
+              
+              color: black;
+            }
+          }
+          .trailer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+            .rating{
+              display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 75px;
+            height: 75px;
+
+            border-radius: 50%;
+            h4{
+              
+              color: black;
+            }
+
+            }
+           .btnPlay{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            :hover{
+              color: red;
+            }
+
+            .modal {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.85);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 999;
+            
+              iframe {
+                width: 70%;
+                height: 70%;
+                border: none;
+                border-radius: 10px;
+              }
+            }
+          }
+            h4 {
+              color: #fff;
+            }
+            span{
+              font-size: 42px;
+             
+           }
+          }
+        }
+        .overview {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h4 {
+            color: #fff;
+          }
+          p {
+            font-size: 15px;
+            color: #ffffff7e;
+            line-height: 28px;
+          }
+        }
+        .status {
+          display: flex;
+          gap: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.297);
+          span {
+            color: #ffffff75;
+          }
+        }
+      }
+    }
+  }
+

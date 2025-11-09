@@ -1,40 +1,51 @@
 .container {
-  padding-block: 20px;
-  background: #173d77;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-block: 7px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+  &.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
   .mainContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: color 0.3s;
+
     .headerIcons {
+      img{
+        width: 55px;
+        height: 55px;
+      }
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 20px;
-      font-family: Permanent Marker, cursive;
+      font-family: "Permanent Marker", cursive;
       font-size: 26px;
       font-weight: 900;
       background: -webkit-linear-gradient(-70deg, #b618ba, #d72b6e);
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
-
-      span {
-        color: #b618ba, #d72b6e;
-      }
     }
+
     .headerTitle {
       display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 30px;
-      a {
+
+      p {
+        font-size: 23px;
         color: #fff;
+        transition: color 0.3s;
+
         &:hover {
           color: #d72b6e;
         }
-      }
-      p {
-        font-size: 23px;
       }
     }
   }
